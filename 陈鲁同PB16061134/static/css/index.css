@@ -1,0 +1,83 @@
+.ertuil_nav{
+    background-color: #ffffff;
+    border :2px  solid #ceccc8;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+}
+
+.icon {
+    width:32px;
+    height:32px;
+}
+
+.ertuil_button{
+    border :1px  solid #e6e6e6;
+}
+
+.ertuil_logo{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    border:2px solid #e6e6e6;
+    border-radius:50%;
+}
+.ertuil_main{
+    position: relative;
+    top:100px;
+
+    width: 100%;
+    height: 600px;
+}
+.ertuil_body{
+    background-color: #fcfaf4;
+    height: 80%;
+    overflow: hidden;
+}
+.ertuil_form{
+    background-color: #ffffff;
+    height: 100%;
+    widows: 100%;
+    border-radius: 10%;
+}
+.ertuil_input{
+    border-top-right-radius: 15px; 
+    border-top-left-radius: 15px; 
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:15px;
+}
+
+.ertuil_button_1{
+    text-align: center;
+}
+.ertuil_show{
+    position: absolute;
+    font-size: 40px;
+    left: 10%;
+}
+.ertuil_text{
+    position: absolute;
+    left:10%;
+    font-size: 25px;
+    text-align: left;
+}
+
+@media screen and (max-width: 1200px){
+    .ertuil_show{
+        position: absolute;
+        font-size: 30px;
+        left: 10%;
+    }
+}
+
+@font-face
+{
+font-family: Font1;
+src: url('./SegoeUI.ttf')
+}
+
+@font-face
+{
+font-family: Font2;
+src: url('./MVBoli.ttf')
+}
