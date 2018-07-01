@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+        <meta name="title" content="iGem登陆页面" />
+        <meta name="keywords" content="iGem,Ustc-Software" />
+        <meta name="description" content="膜王皓大佬,膜王皓大佬" />
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./static/css/index.css">
+        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body class="ertuil_body">
+        <nav >
+            <div class="container-fluid nav justify-content-end ertuil_nav mb-3">
+                <div class="col-sm-4 col-md-5 col-lg-5"></div>
+                <div class="input-group mb-3  col-sm-5 col-md-4 col-lg-4 m-auto">
+                    <div class="input-group-prepend">
+                        <button class="btn ertuil_button" type="button"><img src="./static/search.png" class="img-fluid icon" alt="Cinque Terre"></button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Search for keywords" aria-label="" aria-describedby="basic-addon1">           
+                </div>
+                    <img src="./static/material/个人中心.svg" class="img-fluid icon col-lg-1 col-md-1 col-sm-1 m-auto" alt="Cinque Terre">
+                    <button type="button" class="btn ertuil_button col-lg-1 col-md-1 col-sm-1 m-auto text-center">Login</button>
+                    <img src="./static/svg/si-glyph-bullet-list-2.svg" class="img-fluid icon col-lg-1 col-md-1 col-sm-1 m-auto" alt="Cinque Terre">
+            </div>
+        </nav>
+        <div class="ertuil_logo">
+            <img src="./static/material/logo.png" class="img-circle" alt="Cinque Terre" width="100" height="100">
+        </div>
+        <div class="ertuil_main">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                <div id="funny" class="col ertuil_button_1" onclick="havefun()">
+                    <img src="./static/material/logo.png" style="opacity: 1;" id="fun_1"class="img-circle" alt="Cinque Terre" width="300" height="300">
+                    <label style="font-family:Font2;top:340px;" id="fun_2" class="ertuil_show">Built for iGEMers!</label>
+                    <div id="fun_3" style="font-family:Font1;display:none;top:120px" class="ertuil_text">
+                        <small > Biohub is a universal synthetic biology experiment platform inspired by the way you work. 
+                            You can search the content you need record whatever you want and communicate alongside mang other iGEMers.
+                        </small>
+                    </div>
+                </div>
+                <script>
+                    var clock;
+                    var st = 1;
+                    function havefun(){
+                        var fun1 = document.getElementById("fun_1");
+                        var fun0 = document.getElementById("funny");
+                        var fun2 = document.getElementById("fun_2");
+                        var fun3 = document.getElementById("fun_3");
+                        clock = setInterval("move_it()",10);
+                    }
+                    function move_it(){
+                        var fun2 = document.getElementById("fun_2");
+                        var fun1 = document.getElementById("fun_1");
+                        var tm;
+
+                        if(st == 1){
+                            tm = fun1.style.opacity;
+                            if(tm > 0.1){
+                                fun1.style.opacity = tm - 0.01;
+                            }else{
+                                fun1.style.visibility="hidden";
+                                st += 1;
+                            }
+                        }
+                        if(st == 2){
+                            var jj = parseInt(fun2.style.top);
+                            jj -= 1;
+                            fun2.style.top = jj+"px";
+                            if(jj < 50){
+                                st += 1;
+                                console.log("123")
+                                $("#fun_3").toggle(2000);
+                                clearInterval(clock);
+                            }
+                        }
+                    }
+                </script>
+                <div class="col-lg-2 col-md-2 col-sm-1"></div>
+                <div class="col ertuil_form">
+                    <br>
+                    <form>
+                        <div class="form-group">
+                            <label >Username</label>
+                            <input type="text" class="form-control ertuil_input" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control ertuil_input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control ertuil_input" id="exampleInputPassword1" placeholder="">
+                            <small  class="form-text text-muted">Use at least one letter one numeral and seven characters.</small>
+                        </div>
+                        <div class="ertuil_button_1">
+                            <button type="submit" class="btn btn-primary mb-2 ertuil_input">Sign up for Biohub</button>
+                        </div>
+                        <small class="form-text text-muted">By check "Sign up for Biohub",you agree to our <a href="#">terms of service</a> and  <a href="#">privacy statement</a>.We'll occasionally send you acccount related emails.</small>
+                        <br>
+                    </form>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1"></div>
+            </div>
+        </div>
+    </body>
+</html>
