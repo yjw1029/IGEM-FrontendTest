@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>sign up</title>
+    <style>
+        @font-face {
+            font-family: bio;
+            src: url('material/inuse.ttf');
+        }
+    .form-zone{
+        padding-top:50px;
+        padding-bottom:50px;
+        padding-left:20px;
+        padding-right:20px;
+        margin-left:30px;
+        width:400px;
+        height:500px;
+        background: white;
+        color: darkgray;
+        border-radius:25px;
+    }
+    body {
+        color: black;
+        background: antiquewhite;
+        margin: 0;
+        padding: 0;
+        font-family: Georgia, Palatino, serif;
+    }
+    .topnav{
+        background:white;
+        box-shadow: 0px 2px 5px #888888;
+    }
+    .logoword{
+        left:120px;
+        font-size:40px;
+        font-family: bio;
+        position: absolute;
+        top:380px;
+
+    }
+        .introword{
+            left:120px;
+            font-size:18px;
+            position: absolute;
+            top:80px;
+            opacity: 0;
+        }
+    .logopic{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .pic{
+        transition: all 1s;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        -o-transition:all 1s;
+    }
+        .wor{
+            transition: all 1s;
+            -moz-transition: all 1s;
+            -webkit-transition: all 1s;
+            -o-transition:all 1s;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> <a class="navbar-brand" href="#"><img src="material/logo.png" style="height:80px"></a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav">
+
+                        <li class="active">
+                            <form class="navbar-form navbar-center" role="search">
+                                <div class="input-group">
+                                    <input type="text" style="width:500px;border-radius:25px" class="form-control" placeholder="search by keywords">
+
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <a href="#"><img src="material/self.svg" style="height:30px;padding-bottom:5px"></a>
+                        </li>
+                        <li style="padding-top:10px">
+                           <button class="btn btn-default">LOGIN</button>
+                        </li>
+                        <li style="width:20px">
+                        </li>
+                        <li style="padding-top:10px">
+                            <button class="btn"><span class="glyphicon glyphicon-align-justify"></span></button>
+                        </li>
+                        <li style="width:20px">
+                        </li>
+                    </ul>
+
+
+                </div>
+
+            </nav>
+        </div>
+    </div>
+    <div style="height:150px">
+    </div>
+    <div class="row clearfix">
+        <!--徽章块-->
+        <div class="col-md-6 column">
+
+            <div class="logopic pic" style="padding-left:100px" id="pict">
+
+                <button  style="border-radius:50%">
+                <img  src="material/logo.png" style="width:360px">
+                </button>
+            </div>
+            <div>
+                <p class="logoword wor" id="word">Build for iGEMers</p>
+                <p class="introword wor" id="word2">
+                    BioHub is a universal synthetic biology<br>
+                    experiment platform inspired by the way you<br>
+                    work. You can search the content you need,<br>
+                    record whatever you want and communicate<br>
+                    alongside many other iGEMers.
+                </p>
+            </div>
+
+        </div>
+        <script>
+            document.getElementById("pict").onclick=function(){
+                document.getElementById("pict").style.opacity=0;
+                setTimeout(" document.getElementById(\"pict\").style.height=0",1000);
+                setTimeout(" document.getElementById(\"word\").style.top='30px'",1000);
+                setTimeout(" document.getElementById(\"word2\").style.opacity=1",2000);
+            }
+        </script>
+        <!--表单块-->
+        <div class="col-md-6 column">
+            <div class="form-zone">
+            <form role="form">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Username</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputPassword1" />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">PassWord</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" />
+                </div>
+                <div>
+                    <lable>Use at least one letter, one numeral, and seven characters.</lable>
+                </div>
+                <div align="center" style="margin-top:10px;margin-bottom: 10px">
+                <button type="submit" class="btn btn-info" style="border-radius:25px;width:200px;height:50px">
+                    Sign for BioHub</button>
+                </div>
+                <div>
+                    <label>By clicking "Sign up for BioHub", you agree to our <a href="#">terms of service</a> and
+                        <a>privacy statement</a>. We'll occasionally send you account related emails.</label>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
