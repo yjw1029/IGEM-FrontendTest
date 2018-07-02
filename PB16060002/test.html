@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title> LOGIN </title>
+    <meta name="keywords" content="喵">
+    <meta name="description" content="呜">
+
+    <link href="bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="font-awesome.css?v=4.4.0" rel="stylesheet">
+
+    <link href="animate.css" rel="stylesheet">
+    <link href="style.css?v=4.1.0" rel="stylesheet">
+
+    <link href="test_style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+    <script>if(window.top !== window.self){ window.top.location = window.location;}</script>
+</head>
+
+<body class="buff-bg">
+
+<nav class="navbar navbar-default navbar-fixed-top"
+     style="border-radius: 0 0 10px 10px;box-shadow: 0 3px 3px darkgray;height: 8%"
+     role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img src="https://raw.githubusercontent.com/yjw1029/IGEM-FrontendTest/master/material/logo.png" alt="logo"
+                 style="border-radius: 100%;width: 8%;"
+                 class="logo-style"
+            />
+        </div>
+
+        <div class="collapse navbar-collapse" style="margin-right: 2%;">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-list" style="color: dodgerblue;font-size: x-large"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button type="submit" class="btn btn-default navbar-nav  navbar-right navbar-btn" style="color: gray;margin-right: 1%;margin-left: 1%">LOGIN</button>
+            <p class="navbar-right">  </p>
+            <embed
+                   src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxz%0D%0Admcgd2lkdGg9IjYzcHgiIGhlaWdodD0iNjNweCIgdmlld0JveD0iMCAwIDYzIDYzIiB2ZXJzaW9u%0D%0APSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0%0D%0AdHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1%0D%0AMC4yICg1NTA0NykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAg%0D%0AICA8dGl0bGU+5Liq5Lq65Lit5b+DPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0%0D%0AY2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPHBhdGggZD0iTTY0LjUxNjEyOSwxMDAgTDEy%0D%0ALjkwNDYyNiwxMDAgQzEwLjc4MTk0ODMsMTAwIDYuNDgwNDA2MjYsMTAwIDAsMTAwIEw4Ljk3NTc5%0D%0ANTAyZS0xNCw4Ny4wOTUzNzQgTDAsMCBMMjA2NC41MTYxMywwIEMyMDY0LjUxNjEzLDU4LjA2MzU4%0D%0AMjYgMjA2NC41MTYxMyw4Ny4wOTUzNzQgMjA2NC41MTYxMyw4Ny4wOTUzNzQgQzIwNjQuNTE2MTMs%0D%0AODkuNzc5NTMxNiAyMDY0LjUxNjEzLDk0LjA4MTA3MzYgMjA2NC41MTYxMywxMDAgQzIwNTcuOTgw%0D%0AMjQsMTAwIDIwNTMuNjc4NywxMDAgMjA1MS42MTE1LDEwMCBMMjY1LjIzMjk3NSwxMDAgQzI2NS4y%0D%0AMzI5NzUsMTU1LjIyODQ3NSAyMTUuMDUzNzYzLDIwMCAxNjQuODc0NTUyLDIwMCBDMTE0LjY5NTM0%0D%0AMSwyMDAgNjQuNTE2MTI5LDE1NS4yMjg0NzUgNjQuNTE2MTI5LDEwMCBaIiBpZD0icGF0aC0xIj48%0D%0AL3BhdGg+CiAgICAgICAgPGZpbHRlciB4PSItMS44JSIgeT0iLTE3LjglIiB3aWR0aD0iMTAzLjUl%0D%0AIiBoZWlnaHQ9IjEzNi41JSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiBpZD0iZmls%0D%0AdGVyLTMiPgogICAgICAgICAgICA8ZmVNb3JwaG9sb2d5IHJhZGl1cz0iMC41IiBvcGVyYXRvcj0i%0D%0AZXJvZGUiIGluPSJTb3VyY2VBbHBoYSIgcmVzdWx0PSJzaGFkb3dTcHJlYWRPdXRlcjEiPjwvZmVN%0D%0Ab3JwaG9sb2d5PgogICAgICAgICAgICA8ZmVPZmZzZXQgZHg9IjAiIGR5PSIxIiBpbj0ic2hhZG93%0D%0AU3ByZWFkT3V0ZXIxIiByZXN1bHQ9InNoYWRvd09mZnNldE91dGVyMSI+PC9mZU9mZnNldD4KICAg%0D%0AICAgICAgICAgPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMTIuNSIgaW49InNoYWRvd09m%0D%0AZnNldE91dGVyMSIgcmVzdWx0PSJzaGFkb3dCbHVyT3V0ZXIxIj48L2ZlR2F1c3NpYW5CbHVyPgog%0D%0AICAgICAgICAgICA8ZmVDb2xvck1hdHJpeCB2YWx1ZXM9IjAgMCAwIDAgMCAgIDAgMCAwIDAgMCAg%0D%0AIDAgMCAwIDAgMCAgMCAwIDAgMC41IDAiIHR5cGU9Im1hdHJpeCIgaW49InNoYWRvd0JsdXJPdXRl%0D%0AcjEiPjwvZmVDb2xvck1hdHJpeD4KICAgICAgICA8L2ZpbHRlcj4KICAgICAgICA8ZmlsdGVyIHg9%0D%0AIi0zLjElIiB5PSItMTEuMiUiIHdpZHRoPSIxMDYuNiUiIGhlaWdodD0iMTI4LjQlIiBmaWx0ZXJV%0D%0Abml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIGlkPSJmaWx0ZXItNCI+CiAgICAgICAgICAgIDxmZU9m%0D%0AZnNldCBkeD0iMCIgZHk9IjIiIGluPSJTb3VyY2VBbHBoYSIgcmVzdWx0PSJzaGFkb3dPZmZzZXRP%0D%0AdXRlcjEiPjwvZmVPZmZzZXQ+CiAgICAgICAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRp%0D%0Ab249IjIuNSIgaW49InNoYWRvd09mZnNldE91dGVyMSIgcmVzdWx0PSJzaGFkb3dCbHVyT3V0ZXIx%0D%0AIj48L2ZlR2F1c3NpYW5CbHVyPgogICAgICAgICAgICA8ZmVDb2xvck1hdHJpeCB2YWx1ZXM9IjAg%0D%0AMCAwIDAgMCAgIDAgMCAwIDAgMCAgIDAgMCAwIDAgMCAgMCAwIDAgMC41IDAiIHR5cGU9Im1hdHJp%0D%0AeCIgaW49InNoYWRvd0JsdXJPdXRlcjEiIHJlc3VsdD0ic2hhZG93TWF0cml4T3V0ZXIxIj48L2Zl%0D%0AQ29sb3JNYXRyaXg+CiAgICAgICAgICAgIDxmZU1lcmdlPgogICAgICAgICAgICAgICAgPGZlTWVy%0D%0AZ2VOb2RlIGluPSJzaGFkb3dNYXRyaXhPdXRlcjEiPjwvZmVNZXJnZU5vZGU+CiAgICAgICAgICAg%0D%0AICAgICA8ZmVNZXJnZU5vZGUgaW49IlNvdXJjZUdyYXBoaWMiPjwvZmVNZXJnZU5vZGU+CiAgICAg%0D%0AICAgICAgIDwvZmVNZXJnZT4KICAgICAgICA8L2ZpbHRlcj4KICAgICAgICA8cGF0aCBkPSJNMjYu%0D%0ANjY5NTYwNSw4LjAwMDg2ODE1IEMxMS45NDc5NjMxLDguMDAwODY4MTUgMCwxOS45NDg4MzEzIDAs%0D%0AMzQuNjcwNDI4NiBDMCw0OS4zOTIwMjYgMTEuOTQ3OTYzMSw2MS4zMzk5ODkxIDI2LjY2OTU2MDUs%0D%0ANjEuMzM5OTg5MSBDNDEuMzkxMTU3OSw2MS4zMzk5ODkxIDUzLjMzOTEyMSw0OS4zOTIwMjYgNTMu%0D%0AMzM5MTIxLDM0LjY3MDQyODYgQzUzLjMzOTEyMSwxOS45NDg4MzEzIDQxLjM5MTE1NzksOC4wMDA4%0D%0ANjgxNSAyNi42Njk1NjA1LDguMDAwODY4MTUgTDI2LjY2OTU2MDUsOC4wMDA4NjgxNSBaIE0yNi42%0D%0ANjk1NjA1LDE2LjAwMTczNjMgQzMxLjA5NjcwNzUsMTYuMDAxNzM2MyAzNC42NzA0Mjg2LDE5LjU3%0D%0ANTQ1NzQgMzQuNjcwNDI4NiwyNC4wMDI2MDQ0IEMzNC42NzA0Mjg2LDI4LjQyOTc1MTUgMzEuMDk2%0D%0ANzA3NSwzMi4wMDM0NzI2IDI2LjY2OTU2MDUsMzIuMDAzNDcyNiBDMjIuMjQyNDEzNSwzMi4wMDM0%0D%0ANzI2IDE4LjY2ODY5MjMsMjguNDI5NzUxNSAxOC42Njg2OTIzLDI0LjAwMjYwNDQgQzE4LjY2ODY5%0D%0AMjMsMTkuNTc1NDU3NCAyMi4yNDI0MTM1LDE2LjAwMTczNjMgMjYuNjY5NTYwNSwxNi4wMDE3MzYz%0D%0AIEwyNi42Njk1NjA1LDE2LjAwMTczNjMgWiBNMjYuNjY5NTYwNSw1NC42NzI1OTkgQzIwLjAwMjE3%0D%0AMDQsNTQuNjcyNTk5IDE0LjEwODE5NzUsNTEuMTUwNTIzNyAxMC42Njc4MjQyLDQ1LjgxMjM3ODQg%0D%0AQzEwLjc0NzgzMjksNDAuMzM2NjUxOSAyMS4zMzU2NDg0LDM3LjMzNzM4NDcgMjYuNjY5NTYwNSwz%0D%0ANy4zMzczODQ3IEMzMS45NzY4MDMsMzcuMzM3Mzg0NyA0Mi41OTEyODgxLDQwLjMzNjY1MTkgNDIu%0D%0ANjcxMjk2OCw0NS44MTIzNzg0IEMzOS4yMzA5MjM1LDUxLjE1MDUyMzcgMzMuMzM2OTUwNiw1NC42%0D%0ANzI1OTkgMjYuNjY5NTYwNSw1NC42NzI1OTkgTDI2LjY2OTU2MDUsNTQuNjcyNTk5IFoiIGlkPSJw%0D%0AYXRoLTUiPjwvcGF0aD4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJXZWxjb21lIiBzdHJva2U9Im5v%0D%0AbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAg%0D%0AICAgICA8ZyBpZD0i5Liq5Lq65Lit5b+DIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTQ4NC4wMDAw%0D%0AMDAsIC0xOC4wMDAwMDApIj4KICAgICAgICAgICAgPHJlY3QgaWQ9IuiDjOaZryIgZmlsbD0iI0Y5%0D%0ARjlGOSIgeD0iMCIgeT0iMSIgd2lkdGg9IjE5MjAiIGhlaWdodD0iMjIwMCI+PC9yZWN0PgogICAg%0D%0AICAgICAgICA8ZyBpZD0i5a+86Iiq5qCPIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcuMDAwMDAw%0D%0ALCAtNy4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cCI+CiAgICAgICAgICAg%0D%0AICAgICAgICAgPG1hc2sgaWQ9Im1hc2stMiIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICAgICAg%0D%0AICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgICAgICAgICAg%0D%0AICAgIDwvbWFzaz4KICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iT3ZhbCI+CiAgICAgICAgICAg%0D%0AICAgICAgICAgICAgIDx1c2UgZmlsbD0iYmxhY2siIGZpbGwtb3BhY2l0eT0iMSIgZmlsdGVyPSJ1%0D%0AcmwoI2ZpbHRlci0zKSIgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgICAg%0D%0AICAgICAgICAgIDx1c2UgZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiB4bGluazpo%0D%0AcmVmPSIjcGF0aC0xIj48L3VzZT4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAg%0D%0AICAgICA8L2c+CiAgICAgICAgICAgICAgICA8ZyBpZD0ibG9naW4iIGZpbHRlcj0idXJsKCNmaWx0%0D%0AZXItNCkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1MDYuMDAwMDAwLCAyMS4wMDAwMDApIj4KICAg%0D%0AICAgICAgICAgICAgICAgICA8bWFzayBpZD0ibWFzay02IiBmaWxsPSJ3aGl0ZSI+CiAgICAgICAg%0D%0AICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhdGgtNSI+PC91c2U+CiAgICAgICAg%0D%0AICAgICAgICAgICAgPC9tYXNrPgogICAgICAgICAgICAgICAgICAgIDx1c2UgaWQ9Ik1hc2siIGZp%0D%0AbGw9IiNEMUQxRDEiIHhsaW5rOmhyZWY9IiNwYXRoLTUiPjwvdXNlPgogICAgICAgICAgICAgICAg%0D%0APC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4="
+                   width="2%"
+                   style="border-radius: 100%;position: relative;top: 50%;bottom: 50%;transform:translate(0%, 25%);margin-left: 1%"
+                   type="image/svg+xml"
+                   pluginspage="http://www.adobe.com/svg/viewer/install/"
+                   class="navbar-right"
+            />
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <i class="glyphicon glyphicon-search icon-lens" style="color: slategray;"></i>
+                    <i class="icon-verticalline" style="color: slategray;"> | </i>
+                    <input type="text" style="width: 600px;padding-left: 50px" class="form-control" placeholder="Search by key words">
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="box border box-square text-center loginscreen  animated fadeInDown box-color">
+    <div class="box-color">
+        <form class="m-t" role="form">
+            <div style="text-align: left;font-size: medium;color: gray">Username</div>
+            <div class="form-group">
+                <input type="text" class="form-control" style="border-radius: 10px;border-color: rgba(122,122,122,1)" placeholder="Username" required="">
+            </div>
+            <div style="text-align: left;font-size: medium;color: gray">Email</div>
+            <div class="form-group">
+                <input type="email" class="form-control" style="border-radius: 10px;border-color: rgba(122,122,122,1)" placeholder="Email" required="">
+            </div>
+            <div style="text-align: left;font-size: medium;color: gray">Password</div>
+            <div class="form-group">
+                <input type="password" class="form-control" style="border-radius: 10px;border-color: rgba(122,122,122,1)" placeholder="Passwprd" required="">
+            </div>
+            <div style="margin-top:-4%;text-align: left;font-size: x-small;color: gray">
+                Use at least one lettet, one numeral, and seven characters.
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary block mid-width m-b" style="border-radius: 100px">Sign up for Biohub</button>
+            <div style="text-align: left;font-size: x-small;color: gray">
+                <p> </p>
+                <p>By clicking "Sign up for BioHub", you agree to our
+                    <a href="http://www.4399.com" target="_blank">terms of service</a> and
+                    <a href="http://www.7k7k.com" target="_blank">privacy statement</a>. We'lI occasionally send youaccount related emails.
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div style="size: auto">
+    <div id="up" class="flashfont">
+        Built for iGEMers
+    </div>
+
+    <div id="in" class="hiddenfont" style="display: none">
+        <p>
+            Biohub is a universal synthetic biology <br/>
+            experiment platform inspired by the way you <br/>
+            work. You can search the content you need, <br/>
+            record whatever you want and communicate <br/>
+            alongside many other iGEMers. <br/>
+        </p>
+    </div>
+
+    <img src="https://raw.githubusercontent.com/yjw1029/IGEM-FrontendTest/master/material/logo.png" alt="logo"
+         style="border-radius: 100%;width: 23%;"
+         class="logo-style2"
+         id="out"
+    />
+</div>
+
+</body>
+
+</html>
