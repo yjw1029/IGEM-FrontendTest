@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+    @font-face {
+        font-family: USTC;
+        src: url('materials/Segoe UI.ttf');
+    }
+    @font-face {
+        font-family: USTC-Label;
+        src: url('materials/MV Boli.ttf');
+    }
+    .navbar {
+        font-family: USTC;
+        box-shadow: 1px 0px 10px #ccc;
+    }
+    .nav-link-button {
+        border:1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-top:5px;
+    }
+    .form-control {
+        border-raidus:15px;
+        border: 1px solid #ccc;
+    }
+    .form-control:active, .form-control:focus {
+        border: 1px solid #495A80;
+        box-shadow: none;
+    }
+    .form-control:hover {
+        box-shadow: none;
+    }
+    .col-form-label {
+        color:#aaa;
+        padding-left: 50px;
+    }
+    .btn-ustc{
+        background-color: #426AB3;
+        border-color: #426AB3;
+        border-radius: 15px;
+    }
+    .btn-ustc:focus, .btn-ustc:active, .btn-ustc:hover {
+        background-color: #3159A2;
+    }
+    </style>
+    <body  style="background-color :#FFF8EF">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="materials/logo.png" width="40"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0 ml-auto mr-1">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="search by keyword" aria-label="keyword" aria-describedby="basic-addon1">
+                    </div>
+                </form>
+                <ul class="navbar-nav ml-1">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fa fa-user-circle fa-2x"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-button" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class='row'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img onclick="img_click()" style="opacity:1;margin-top:150px;margin-left:50px;" src="materials/logo.png" width="300px" id="logo">
+                        <h3 style="font-family: USTC-Label; font-size:50px; margin-top:20px;" id="title">Built for iGEMers</h3>
+                        <p style="font-size: 30px; opacity: 0" id="desc"> Biohub is a universal synthetic biology experiment platform inspired by the way you work. You can serach the content you need, record whatever you want and communicate alongside many other iGEMers.
+                        </p>
+                    </div>
+                    <div class="col-sm-6" style="margin-top:150px;background-color:white;padding-top:30px;border-radius:30px">
+                        <form>
+                            <label for="username" class="col-sm-2 col-form-label">Username</label>
+                            <div class="form-group row">          
+                                <div class="col-sm-10 mx-auto">
+                                    <input type="email" class="form-control" id="username">
+                                </div>
+                            </div>
+                            <label for="Email" class="col-sm-2 col-form-label">Email</label>
+                            <div class="form-group row">
+                                <div class="col-sm-10 mx-auto">
+                                    <input type="email" class="form-control" id="Email">
+                                </div>
+                            </div>
+                            <label for="Password" class="col-sm-2 col-form-label">Password</label>
+                            <div class="form-group row">
+                                <div class="col-sm-10 mx-auto">
+                                    <input type="password" class="form-control" id="Password">
+                                </div>
+                                <small style="padding-left:60px; color:#999;padding-top:5px;">Use at last one letter, one numeral, and seven characters.</small>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-10" style="padding-left:200px">
+                                    <button type="submit" class="btn btn-primary btn-ustc">Sign up for Biohub</button>
+                                </div>
+                                <small style="width:90%;padding-left:60px; color:#999;padding-top:5px;">By clicking "Sign up for BioHub", you agree to our terms of service and privacy statement. We'll occasionally send you account related emails.</small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function img_click() {
+            console.log($('#logo'))
+            $('#logo').animate({opacity:0},1000,function() {
+                $('#title').animate({marginTop: -250}, 1000, function() {
+                    $('#desc').animate({opacity: 1}, 1000)
+                })  
+            })
+        }
+    </script>
+</html>
