@@ -1,0 +1,224 @@
+body,html{height:100%;width:100%;  bottom:0;background-color: rgba(255,233,179,0.14) };
+@font-face {
+    font-family:MV Boli;
+    src:url('MV Boli.ttf');
+}
+.nav0{
+    fill:rgba(255,233,179,0.14);
+    height:1%;
+    background-color: rgba(255,233,179,0.14);
+}
+.glyphicon.glyphicon-search{
+    color: rgba(17,26,58,0.36);
+    background-color: transparent;
+}
+.searchk{
+    color:rgba(17,26,58,0.36);
+    width:100%;
+    border:none;
+    background-color:transparent;
+}
+.button1{
+    color:rgba(17,26,58,0.36);
+}
+.glyphicon.glyphicon-align-left{
+    color: rgba(54,175,225,0.61);
+    width:120%;
+}
+.logo1{
+    width:40%;
+    border-color: #0c0c0c;
+}
+.container-fluid{
+    background-color:#fff;
+}
+.personcenter{
+    background-color: transparent;
+    justify-content:center;
+    align-items:center;
+    display:-webkit-flex;
+}
+.svg {
+
+    fill: rgba(198, 192, 176, 0.17);
+    background-color:transparent;
+}
+.loginbutton{
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    display:-webkit-flex;
+}
+.dropdown1{
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    display:-webkit-flex;
+}
+.container-fluid.nav1{
+    align-items:center;
+    background-color: rgba(206,199,168,0.09);
+    border-bottom:outset;
+    box-shadow:3px 2px 5px 4px #ccc
+    border-bottom-left-radius:0.5em;
+    border-bottom-right-radius: 0.5em;
+    height:100%;
+    display:-webkit-flex;
+}
+
+.signup{
+    height:100%;
+}
+.signup-group{
+    margin-top:20%;
+    margin-bottom:40%;
+
+    width:60%;
+    background-color: #fff;
+    border-radius:20px;
+    padding-top:10%;
+    padding-bottom:10% ;
+}
+.username{
+    margin:0 auto;
+    width:80%;
+    height:40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.tips{
+    width:80%;
+    margin:0 auto;
+    margin-top:3%;
+    font-size: 1vw;
+    color: rgba(9,13,30,0.52);
+}
+.email{
+    margin:0 auto;
+    width:80%;
+    height:40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.password{
+    margin:0 auto;
+    width:80%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.button2{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width:60%;
+    margin:0 auto;
+}
+.logindesk{
+    background-color:rgba(255,233,179,0.14);
+    height:100%;
+    width:100%;
+}
+.tips2{
+    width:80%;
+    margin:0 auto;
+    margin-top:5%;
+    font-size:0.5vw;
+    color:rgba(20,26,58,0.36);
+}
+.description1{
+    margin-left: 12%;
+    margin-top:12%;
+    width:110%;
+    font-size:3.5vw;
+    font-family: "MV Boli";
+    font-stretch: expanded;
+}
+.description2{
+    margin-left: 12%;
+    margin-top:12%;
+    width:110%;
+    font-size:3.5vw;
+    font-family: "MV Boli";
+    font-stretch: expanded;
+    animation:mytranspos 2s;
+    -webkit-animation: mytranspos 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+}
+@keyframes mytranspos
+{
+    0%{font-size:3.5vw;margin-top:12%;}
+    100%{font-size:4vw;margin-top: -50%;}
+}
+
+@-webkit-keyframes mytranspos /* Safari and Chrome */
+{
+    0%{font-size:3.5vw;margin-top:12%;}
+    100%{font-size: 4vw;margin-top: -50%;}
+}
+.login-display{
+    width:80%;
+    height:90%;
+    margin-left:60%;
+    margin-top:15%;
+}
+.logobutton{
+    width:50%;
+    margin:0 auto;
+    margin-top:40%;
+}
+.logobutton1{
+    width:50%;
+    margin:0 auto;
+    margin-top:40%;
+    opacity:1;
+    animation:fadeIn 0.5s;
+    -webkit-animation: fadeIn 0.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+}
+@keyframes fadeIn
+{
+    from {opacity:1;}
+    to {opacity:0;}
+}
+
+@-webkit-keyframes fadeIn /* Safari and Chrome */
+{
+    from {opacity:1;}
+    to {opacity:0;}
+}
+.description3{
+
+    margin-left: 15%;
+    width:80%;
+    font-size:80%;
+    opacity:0;
+
+}
+.description4{
+
+    margin-top:5%;
+    margin-left:15%;
+    width:80%;
+    font-size:80%;
+    opacity:0;
+    animation:fadeOut 1s;
+    -webkit-animation: fadeOut 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+    animation-delay:2s;
+    -webkit-animation-delay:2s; /* Safari 和 Chrome */
+}
+@keyframes fadeOut
+{
+    from {opacity: 0;}
+    to {opacity:1;}
+}
+
+@-webkit-keyframes fadeOut /* Safari and Chrome */
+{
+    from {opacity: 0;}
+    to {opacity:1;}
+}
