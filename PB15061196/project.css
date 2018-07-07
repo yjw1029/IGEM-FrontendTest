@@ -1,0 +1,50 @@
+
+@font-face 
+{
+  font-family:MV_BOLI;   
+  src: url('material/MV Boli.ttf');       
+}
+
+
+.nav-item
+{
+	background-color:#DCDCDC;	
+}
+.gn_body
+{
+	background-color:#FFF0F5;
+}
+.gn_nav
+{
+	background-color:#DCDCDC;
+	box-shadow:0px 0px 10px 5px;
+	z-index:1;
+}
+.gn_logo
+{
+	position:absolute;
+	position:fixed;
+	z-index:10;
+	top:50px;
+	left:50px;
+}
+.gn_table
+{
+	background-color:#FFFFFF;	
+	width:100%;
+	height:100%;
+	border:1px solid #FFFFFF;
+	border-radius:40px;
+}
+.gn_signupbutton
+{
+	background-color:#87CEEB;
+	width:40%;
+	heigh:100%;
+	border-radius:40px;
+}
+.gn_form
+{
+	border-radius:10px;
+	width:60%;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>registration page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="project.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script> 
+		$(document).ready(function(){
+			$("#trigger").click(function(){
+				$("#trigger").fadeTo(1000,0,function(){
+					$("#trigger1").animate({marginTop:"-350px"},1000,function(){									
+						$("#trigger2").fadeIn(1000);
+					});
+				});						
+			});
+		});
+	</script> 
+</head>
+<body class="gn_body">
+
+<div class="gn_nav" >
+    <div class="row">
+        <nav class="gn_nav navbar navbar-expand-lg fixed-top">
+			<div class="col-lg-8"></div>	    
+	        <div class="col-lg-4">
+				<button class="navbar-toggler navbar-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="border:1px solid #000000;height:45px;margin-top:5px;color:#000000;float:right">
+					<span class="navbar-toggler-icon">
+						<img src="material/list.png" alt="List" width="30px">
+					</span>
+				</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<form>
+							    <div class="input-group" style="height:50px;margin-top:10px">
+							        <div class="input-group-prepend">
+								            <button type="button" class="btn" style="border:1px solid #000000">
+												<img src="material/search.png" alt="Search" style="margin-top:-5px">
+											</button>										
+							        </div>
+								    <input type="text" class="form-control" placeholder="Search">
+							    </div>
+							</form>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<img src="material/个人中心.svg" alt="PC" style="height:45px;margin-top:5px">
+							</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<button type="button" class="btn" style="border:1px solid #000000;height:45px;margin-top:5px">LOGIN</button>
+							</a>
+					    </li>
+						
+						<li class="nav-item">
+							<div class="dropdown">
+								<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+									<img src="material/list.png" alt="List" style="height:45px;margin-top:5px">
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Link 1</a>
+									<a class="dropdown-item" href="#">Link 2</a>
+									<a class="dropdown-item" href="#">Link 3</a>
+								</div>
+							</div>
+						</li>
+						
+					</ul>
+				</div> 
+			</div>	
+
+		</nav>
+  </div>
+</div>
+
+<div class="gn_logo">
+	<a href="#" >
+		<img src="material/logo.png" alt="Logo" width="100px" height="100px">
+    </a>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-4">
+
+			<img src="material/logo.png" alt="Logo" width="400px" height="400px" id="trigger">
+			<p style="font-family:MV_BOLI;font-size:50px" id="trigger1">Built for iGEMers!<p>
+			<p style="font-size: 30px;display:none" id="trigger2"> 
+				Biohub is a universal synthetic biology experiment platform inspired by the way you work. 
+				You can serach the content you need, record whatever you want and communicate alongside many other iGEMers.
+            </p>
+		</div>
+		<div class="col-lg-1"></div>
+		<div class="col-lg-4 gn_table">	
+			<br><br>
+			<form>
+				<label for="usrname" style="margin-left:20%">Username</label><br>
+				<center>
+					<input type="text" name="username" class="form-control gn_form"><br>
+				</center>
+				<label for="email" style="margin-left:20%">Email</label><br>
+				<center>
+					<input type="email" name="email" class="form-control gn_form"><br>
+				</center>					
+				<label for="password" style="margin-left:20%">Passwrad</label><br>
+				<center>
+					<input type="password" name="password" class="form-control gn_form"><br>						
+					<p style="font-size:14px">
+						Use at least one letter one numeral and seven characters.
+					</p>
+					<button type="submit" class="btn gn_signupbutton">
+						<p style="font-size:25px;color:#FFFFFF;margin-top:10px">Sign up for Biohub</p>
+					</button>
+					<p style="margin-top:10px;font-size:14px">
+						By check "Sign up for Biohub",you agree to our <a href="#">terms of <br>
+						service</a> and <a href="#">privacy statement</a>.We'll occasionally send you<br> 
+						acccount related emails.
+					</p>
+				</center>
+			</form>
+		</div>
+		<div class="col-lg-1"></div>			
+</div>
+
+</body>
+</html>
