@@ -1,0 +1,96 @@
+.box {
+    max-width: 400px;
+    z-index: 100;
+    margin: 0 auto;
+    padding-top: 0;
+    margin-right: 12vw;
+    margin-top: 10%;
+}
+
+.lockscreen.middle-box {
+    width: 200px;
+    padding-top: 110px;
+}
+
+.loginscreen.middle-box {
+    width: 300px;
+}
+
+
+.border {
+    border-style: solid solid solid solid;
+    border-left-color: white;
+    border-bottom-color: white;
+    border-right-color: white;
+    border-top-color: white;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-radius: 10%;
+}
+
+
+.box-square {
+    width: auto;
+    height: auto;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+}
+
+
+.box-color {
+    background-color: white;
+}
+
+.mid-width {
+    width: 50% !important;
+    margin: auto;
+}
+
+.logo-style {
+    position: absolute;
+    left: 5%;
+    top: 0;
+    border: 1px solid gray;
+    box-shadow: 0 3px 3px darkgray;
+}
+
+.icon-lens {
+    position: relative;
+    left: 43px;
+}
+
+.icon-verticalline {
+    position: relative;
+    left: 50px;
+}
+
+
+.flashfont {
+    font-family: "MV Boli", serif;
+    font-size: 4vw;
+    color: black;
+    position: absolute;
+    left: 15%;
+    top: 65%;
+}
+
+.hiddenfont {
+    font-family: "Segoe UI", serif;
+    font-size: 2vw;
+    color: black;
+    position: absolute;
+    left: 10%;
+    top: 45%;
+    margin: 0 auto;
+}
+
+.logo-style2 {
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    border: 1px solid gray;
+}
