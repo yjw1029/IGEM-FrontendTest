@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+   <link href="cover.css" rel="stylesheet">
+   <meta name="Generator" content="EditPlus®">
+   <meta name="Author" content="LJA">
+   <meta name="Keywords" content="">
+   <meta name="Description" content="">
+   <link rel="stylesheet" >
+   <title>Document</title>
+   <style type='text/css'>
+
+      .masthead {
+                 background-color:#ffffcc
+                } 
+
+      #lja{
+            background-color: white;
+            border-color: white;
+            padding: 50px 40px 50px 50px;
+	      
+	        border-radius: 20px 20px 20px 20px;
+            border-style: solid;
+	        border-width: 10px;
+	        position: relative;left: 50px ;top:100px
+	       }
+
+       .fontcontrol{
+          font-size: 15px;
+	      color: grey;
+         }
+
+	  #navv{
+	         background-color: white;+			 border-color:white;
+			 border-radius:0 0 10px 10px;
+			 border-style:solid;
+			 border-width:3px;
+			 padding: 5px;
+			 box-shadow: 0 0 0 1px; 
+	        }
+	
+       #signup{background-color:#0099ff;}
+  
+       #searchblank{position:relative; left: 600px}
+
+   </style>
+
+ </head>
+
+ <body class='masthead'>
+    
+  <div id='navv'>
+   <div class="row">
+ 
+     <div class="col-xs-6 col-sm-3" >
+        <img src="https://github.com/yjw1029/IGEM-FrontendTest/blob/master/material/logo.png" alt='logo' style='position:relative; left:50px'>
+     </div>
+     <div class="col-xs-4 col-sm-2" ></div>
+	 <div>
+       <div class="col-xs-6 col-sm-3">
+	  
+	      <div class='input-group'>
+          <div class='input-group-prepend'>
+		      <span class='input-group-addon'><span class="glyphicon glyphicon-search" aria-hidden="true"></span><span>
+		  </div>
+              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="search by keywords" aria-label="keyword">
+		  </div>
+       </div>
+	   <div class="col-xs-2 col-sm-1">
+          <img src="https://github.com/yjw1029/IGEM-FrontendTest/blob/master/material/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83.svg" alt='个人中心'>
+	   </div>
+       <div class="col-xs-1 col-sm-1">
+	       <button type="submit" class="btn btn-default" >LOGIN</button>
+	   </div>
+	   <div class="col-xs-1 col-sm-1" style='color:blue'>
+	       <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+	   </div>
+     </div>
+
+
+   </div>
+  </div>
+ <div class='container'>
+   <div class='row'>
+         <div class='col-sm-8'>
+		  <h1  onmouseover='mOver(this)' style='background-color:blue;color:white;position:relative;top:400px'>这里本该有个动画，如果给我个机会，我会恶补JavaScript的..........</h1>
+		
+		 </div>
+         <div class="col-sm-4" id='lja' bgcolor='#ffffcc'>
+		     <form>
+                 <div class='form-group'>
+	                  <label class='fontcontrol'> Username</label> 
+                  </div>
+
+               <div class='form-group row'>
+	               <div class="col-sm-11">
+	                  <input type="Username" class="form-control" style="border-radius:9px;" aria-describedby="size-addon3">
+                  </div>
+	            </div>
+
+              <div class='form-group'>
+	             <label class='fontcontrol'> Email</label> 
+             </div>
+         <div class='form-group row'>
+	         <div class="col-sm-11">
+	             <input type="Email" class="form-control" style="border-radius:9px;" aria-describedby="size-addon3">
+              </div>
+	      </div>
+
+          <div class='form-group'>
+	          <label class='fontcontrol'> Password</label> 
+          </div>
+
+          <div class='form-group row'>
+	           <div class="col-sm-11">
+	               <input type="Password" class="form-control" style="border-radius:9px;" aria-describedby="size-addon3">
+                </div>
+	       </div>
+	
+
+	       <p style="font-size:7px; color:grey">Use at least one letter, one numeral, and seven characters.</p>
+
+	       <center><button type="button" class="btn btn-primary btn-lg" style="border-radius:20px" id='signup'>Sign up for Biohub</button></center>
+            <div>
+	            <p style="font-size:7px; color:grey">By clicking"Sign up for Biohub", you agree to our <a href=https://www.ustc.edu.cn/>terms of service</a> and <a href=http://www.w3school.com.cn>privacy
+	            statement</a> . We'll ocassionally send you account related emails.</p>
+              </div>
+	      </div>
+	   </div>
+   </div>
+   
+  </form>
+    </div>
+ </div>
+  </div>
+
+<script>
+   function mOver(obj)
+   {
+   obj.innerHTML="Orz"
+   }
+  
+</script>
+
+
+ </body>
+</html>
